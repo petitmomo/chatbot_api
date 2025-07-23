@@ -1,0 +1,9 @@
+fastapi
+uvicorn
+requests
+langchain==0.1.16
+langchain-community
+chromadb
+pypdf
+sentence-transformers
+huggingface_hub
