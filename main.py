@@ -12,7 +12,7 @@ from langchain_community.llms import HuggingFaceHub
 import uvicorn
 app = FastAPI()
 
-TOGETHER_API_KEY = "ca062ff263780bffa66fd02b0627e825659aed0450e3307f9b13880d3c045e3c"
+TOGETHER_API_KEY = "together_api_key"
 MODEL = "mistralai/Mistral-7B-Instruct-v0.1"
 chat_history = []
 
@@ -118,7 +118,4 @@ Réponse :"""
         return {"response": result}
     else:
         return {"error": response.text}
-    ###### replit config
-
-if __name__ == "__main__":
-    uvicorn.run(app, host="0.0.0.0", port=8000)
+    
